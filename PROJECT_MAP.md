@@ -90,6 +90,15 @@
 - `chroma_db_backup_*`、`chroma_db_dim384_*`、`chroma_export_*.json`：备份/导出数据。用途和是否仍需保留：待确认。
 - `vector_store.restore.tmp`：空临时文件。用途：待确认。
 
+## 公开文档入口
+
+- `README.md`：公开仓库首页，说明定位、快速启动、RAG/Agent 能力、评测和发布检查。
+- `CHANGELOG.md`：公开版本变更记录。
+- `docs/PROJECT_WALKTHROUGH.md`：项目架构、RAG 流程、可展开技术点和讲解清单。
+- `docs/SAMPLE_DATA.md`：脱敏示例资料和快速体验路线。
+- `docs/AGENT_GUIDE.md`：Agent 能力、debug 字段、使用示例和评测入口。
+- `docs/OPEN_SOURCE_CHECKLIST.md`：公开仓库发布检查清单。
+
 ## 测试与验证
 
 - Pytest 配置：`pytest.ini`，`testpaths = tests`。

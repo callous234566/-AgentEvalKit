@@ -19,7 +19,7 @@ Use this checklist before publishing or refreshing the GitHub repository.
 - [ ] `logs/`, `data/`, caches, and sessions are not tracked.
 - [ ] `eval/rag_eval_report.json` and `eval/agent_eval_report.json` are not tracked.
 - [ ] Private knowledge base documents are not tracked.
-- [ ] Only sanitized demo docs under `zhishiku/demo_*.md` are included.
+- [ ] Only sanitized sample docs under `zhishiku/demo_*.md` are included.
 
 ## Commands / 检查命令
 

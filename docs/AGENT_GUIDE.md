@@ -1,4 +1,4 @@
-# Agent 能力说明与演示脚本
+# Agent 能力说明与使用示例
 
 本项目的 Agent 不是用来替代普通 RAG 主链路，而是作为增强层：在需要时调用本地知识库、Web 搜索或受限 Python 工具，并把工具选择、证据来源和失败降级过程完整记录到 debug 信息中。
 
@@ -27,14 +27,14 @@
 - `evidence_items`：统一证据列表，可用于后续证据抽屉。
 - `fallback_reason` / `fallback_used`：Agent 失败或策略兜底原因。
 
-## 面试演示脚本
+## 使用示例
 
-建议用脱敏演示知识库，先上传：
+建议用脱敏示例知识库，先上传：
 
 - `zhishiku/demo_rag_workbench.md`
 - `zhishiku/demo_agent_debug.md`
 
-然后按下面顺序演示：
+然后按下面顺序体验：
 
 1. **本地资料问题**
    - 问：`Agent 为什么应该优先检索本地知识库？`
@@ -81,7 +81,7 @@ D:\anaconda3\envs\ai_project\python.exe -m pytest tests\test_agent_debug.py test
 如需生成真实 Agent 评测报告：
 
 ```powershell
-D:\anaconda3\envs\ai_project\python.exe eval\agent_eval.py --api-base http://127.0.0.1:8000 --collection-name 公开演示知识库 --output-json eval\agent_eval_report.json
+D:\anaconda3\envs\ai_project\python.exe eval\agent_eval.py --api-base http://127.0.0.1:8000 --collection-name 示例知识库 --output-json eval\agent_eval_report.json
 ```
 
 `eval/agent_eval_report.json` 属于本地评测产物，公开仓库中不应提交。

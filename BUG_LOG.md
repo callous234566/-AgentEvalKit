@@ -1,3 +1,11 @@
+## 2026-07-04 GitHub 开源完整度收口
+
+- 目标：进一步整理公开 GitHub 仓库门面，补齐发布版本、公开文档命名和仓库治理设置。
+- 文档：`docs/INTERVIEW_GUIDE.md` 改名为 `docs/PROJECT_WALKTHROUGH.md`，`docs/DEMO_PACKAGE.md` 改名为 `docs/SAMPLE_DATA.md`；README、PROJECT_MAP 和开源检查清单同步新路径与产品化表述。
+- 发布：新增 `CHANGELOG.md`，记录 `v0.1.0` 初始公开版本能力和不包含的本地/私有产物。
+- CI：GitHub Actions `CI` 增加 `v*` tag push 触发，方便 release tag 也跑轻量检查。
+- 范围：仅仓库治理、公开文档和 CI 触发条件；未修改 RAG、Agent、前端或后端业务逻辑。
+
 ## 2026-07-04 README 公开产品口径收敛
 
 - 目标：移除公开 README 和贡献指南中的“面试展示 / interview-ready / demo”包装口径，让仓库更像长期维护的标准开源项目。

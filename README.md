@@ -139,8 +139,8 @@ Agent 为什么应该优先检索本地知识库？
 
 更多使用指南见：
 
-- `docs/DEMO_PACKAGE.md`
-- `docs/INTERVIEW_GUIDE.md`
+- `docs/SAMPLE_DATA.md`
+- `docs/PROJECT_WALKTHROUGH.md`
 - `docs/AGENT_GUIDE.md`
 - `docs/OPEN_SOURCE_CHECKLIST.md`
 
@@ -432,9 +432,9 @@ python scripts\check_backend_release.py --no-health
 
 ### Documentation
 
-- `docs/INTERVIEW_GUIDE.md`: project walkthrough and explanation notes.
+- `docs/PROJECT_WALKTHROUGH.md`: project walkthrough and explanation notes.
 - `docs/AGENT_GUIDE.md`: Agent capabilities, boundaries, debug fields, and eval.
-- `docs/DEMO_PACKAGE.md`: sanitized sample package.
+- `docs/SAMPLE_DATA.md`: sanitized sample package.
 - `docs/OPEN_SOURCE_CHECKLIST.md`: release checklist for public GitHub publishing.
 - `docs/KNOWN_ISSUES.md`: recurring pitfalls.
 - `PROJECT_MAP.md`: repository map for maintainers.
