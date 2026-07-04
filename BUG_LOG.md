@@ -1,3 +1,9 @@
+## 2026-07-04 GitHub Topics 补充
+
+- 目标：补齐公开仓库 Topics，提升 GitHub 搜索可发现性和面试展示观感。
+- 调整：设置 Topics 为 `rag`、`retrieval-augmented-generation`、`llm`、`ai-agent`、`agent-evaluation`、`knowledge-base`、`fastapi`、`streamlit`、`langchain`、`chroma`、`vector-database`、`tavily`、`siliconflow`、`chinese-rag`、`eval`。
+- 范围：仅 GitHub 仓库元数据和维护日志；未修改业务代码或运行时行为。
+
 ## 2026-07-04 GitHub 仓库名称与描述更新
 
 - 目标：去掉公开仓库名称前面的横杠，让 GitHub 页面更像标准开源项目。
