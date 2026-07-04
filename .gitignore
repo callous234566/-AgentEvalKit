@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.cache/
+.pytest_cache/
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# 环境变量（包含敏感信息）
+.env
+.claude/settings.local.json
+
+# 向量数据库（自动生成）
+chroma_db/
+chroma_db_backup_*/
+chroma_db_dim384_*/
+chroma_export_*.json
+vector_store.restore.tmp
+eval/rag_eval_report.json
+eval/agent_eval_report.json
+
+# 本地用户数据
+data/
+zhishiku/*
+!zhishiku/demo_*.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志
+*.log
+logs/
+.runtime_logs/
+.runlogs/
+outputs/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
