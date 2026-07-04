@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a reproducible problem in AgentEvalKit.
+description: Report a reproducible problem in Personal RAG Assistant.
 title: "[Bug]: "
 labels: ["bug"]
 body:

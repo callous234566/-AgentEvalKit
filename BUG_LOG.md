@@ -1,3 +1,10 @@
+## 2026-07-04 GitHub 仓库重新命名为 PersonalRAGAssistant
+
+- 目标：让公开仓库名称更贴合项目本体，避免 `AgentEvalKit` 给人“只是 Agent 评测工具”的误解。
+- 调整：GitHub 仓库从 `callous234566/AgentEvalKit` 重命名为 `callous234566/PersonalRAGAssistant`，Description 同步为个人 RAG 知识库助手定位。
+- 同步：本地 `origin` remote 已更新为 `https://github.com/callous234566/PersonalRAGAssistant.git`；README 标题、简介、CI badge 和 GitHub issue template 文案同步为新名称。
+- 范围：仅 GitHub 仓库元数据、README/模板文案和维护日志；未修改业务代码或运行时行为。
+
 ## 2026-07-04 GitHub Topics 补充
 
 - 目标：补齐公开仓库 Topics，提升 GitHub 搜索可发现性和面试展示观感。

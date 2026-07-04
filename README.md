@@ -1,6 +1,6 @@
-# AgentEvalKit / Personal RAG Knowledge Base Assistant
+# Personal RAG Assistant / 个人 RAG 知识库助手
 
-[![CI](https://github.com/callous234566/AgentEvalKit/actions/workflows/ci.yml/badge.svg)](https://github.com/callous234566/AgentEvalKit/actions/workflows/ci.yml)
+[![CI](https://github.com/callous234566/PersonalRAGAssistant/actions/workflows/ci.yml/badge.svg)](https://github.com/callous234566/PersonalRAGAssistant/actions/workflows/ci.yml)
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue)
 ![License MIT](https://img.shields.io/badge/License-MIT-green)
 ![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688)
@@ -10,9 +10,9 @@
 
 [中文](#中文说明) | [English](#english)
 
-AgentEvalKit is an interview-ready personal RAG knowledge base assistant built with **FastAPI + Streamlit + LangChain + Chroma + SiliconFlow + Tavily**. It is designed to demonstrate a complete, maintainable AI application: document ingestion, hybrid retrieval, grounded answers with citations, Agent tool routing, Web fallback, request-id diagnostics, and evaluation baselines.
+Personal RAG Assistant is an interview-ready personal RAG knowledge base assistant built with **FastAPI + Streamlit + LangChain + Chroma + SiliconFlow + Tavily**. It is designed to demonstrate a complete, maintainable AI application: document ingestion, hybrid retrieval, grounded answers with citations, Agent tool routing, Web fallback, request-id diagnostics, and evaluation baselines.
 
-AgentEvalKit 是一个面向面试展示和长期维护的个人 RAG 知识库助手，技术栈为 **FastAPI + Streamlit + LangChain + Chroma + SiliconFlow + Tavily**。项目重点不是简单 demo，而是把文档入库、混合检索、引用追踪、Agent 工具调用、Web 降级、request id 排障和评测基线做成完整闭环。
+Personal RAG Assistant 是一个面向面试展示和长期维护的个人 RAG 知识库助手，技术栈为 **FastAPI + Streamlit + LangChain + Chroma + SiliconFlow + Tavily**。项目重点不是简单 demo，而是把文档入库、混合检索、引用追踪、Agent 工具调用、Web 降级、request id 排障和评测基线做成完整闭环。
 
 ![Workbench](docs/images/workbench.png)
 
