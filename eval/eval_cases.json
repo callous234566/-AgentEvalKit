@@ -1,0 +1,123 @@
+[
+  {
+    "id": "basic_rag_retrieval",
+    "collection": "RAG技术原理",
+    "question": "RAG 检索组件通常可以从哪些方面优化？",
+    "expected_source_contains": "",
+    "expected_keywords": ["检索", "向量", "缓存"],
+    "min_answer_chars": 50
+  },
+  {
+    "id": "unknown_answer_guard",
+    "collection": "RAG技术原理",
+    "question": "这些资料是否说明了火星基地厨房的虚构配置项？",
+    "expected_source_contains": "",
+    "expected_keywords": ["无法回答"],
+    "max_answer_chars": 40
+  },
+  {
+    "id": "generation_component",
+    "collection": "RAG技术原理",
+    "question": "RAG 的生成阶段可以通过哪些方式提升回答质量？",
+    "expected_source_contains": "",
+    "expected_keywords": ["生成"],
+    "min_answer_chars": 50
+  },
+  {
+    "id": "vector_store_basics",
+    "collection": "RAG技术原理",
+    "question": "向量检索在 RAG 中的作用是什么？",
+    "expected_source_contains": "01_向量检索资料.md",
+    "expected_keywords": ["向量", "检索", "文档片段"],
+    "min_answer_chars": 50
+  },
+  {
+    "id": "large_file_chunking",
+    "collection": "AI编程学习库",
+    "question": "如何在 Python 中流式读取大文件以减少内存占用？",
+    "expected_source_contains": "02_Python学习笔记.md",
+    "expected_keywords": ["流式", "chunk", "内存"],
+    "min_answer_chars": 50,
+    "forbidden_keywords": ["根据现有资料无法回答"]
+  },
+  {
+    "id": "rag_eval_report",
+    "collection": "AI编程学习库",
+    "question": "如何用 Python 生成 RAG 评估报告，并统计准确率和召回率？",
+    "expected_source_contains": "",
+    "expected_keywords": ["准确率", "召回率", "报告"],
+    "min_answer_chars": 50,
+    "forbidden_keywords": ["pip install nltk"]
+  },
+  {
+    "id": "langchain_core_modules",
+    "collection": "AI编程学习库",
+    "question": "LangChain 的核心模块有哪些？",
+    "expected_source_contains": "03_LangChain学习资料.md",
+    "expected_keywords": ["Chain"],
+    "min_answer_chars": 50
+  },
+  {
+    "id": "chinese_collection_name",
+    "collection": "本项目开发与代码结构说明",
+    "question": "中文知识库名称为什么需要映射到 Chroma 内部名称？",
+    "expected_source_contains": "AGENTS.md",
+    "expected_keywords": ["中文", "Chroma", "映射"],
+    "min_answer_chars": 50
+  },
+  {
+    "id": "hybrid_search_advantage",
+    "collection": "RAG技术原理",
+    "question": "Hybrid Search 相比单纯向量检索有什么优势？",
+    "expected_source_contains": "03_Hybrid_Search资料.md",
+    "expected_keywords": ["BM25"],
+    "min_answer_chars": 50
+  },
+  {
+    "id": "exact_title_source_probe",
+    "collection": "RAG技术原理",
+    "question": "BM25 在 RAG 检索中有什么作用？请优先命中 BM25 资料。",
+    "expected_source_contains": "02_BM25资料.md",
+    "expected_keywords": ["BM25"],
+    "min_answer_chars": 50,
+    "min_top_score": 0.0,
+    "tags": ["exact_title", "source_score"]
+  },
+  {
+    "id": "query_rewrite_fallback_probe",
+    "collection": "RAG技术原理",
+    "question": "Query Rewrite 跑偏时如何回退到原始查询？",
+    "expected_source_contains": "06_Query_Rewrite资料.md",
+    "expected_keywords": ["原始查询"],
+    "min_answer_chars": 50,
+    "min_top_score": 0.0,
+    "tags": ["query_rewrite", "fallback"]
+  },
+  {
+    "id": "compression_protection_probe",
+    "collection": "RAG技术原理",
+    "question": "Contextual Compression 为什么需要保护高置信片段？",
+    "expected_source_contains": "05_Contextual_Compression资料.md",
+    "expected_keywords": ["片段"],
+    "min_answer_chars": 50,
+    "min_top_score": 0.0,
+    "expected_trace": {
+      "compression": {
+        "protected_count_min": 0
+      }
+    },
+    "tags": ["contextual_compression", "protected_chunk"]
+  },
+  {
+    "id": "collection_listing",
+    "endpoint": "GET /collections",
+    "question": "",
+    "check": "collection_list_returns_array"
+  },
+  {
+    "id": "health_check",
+    "endpoint": "GET /health",
+    "question": "",
+    "check": "health_returns_healthy"
+  }
+]

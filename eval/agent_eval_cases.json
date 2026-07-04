@@ -1,0 +1,79 @@
+[
+  {
+    "id": "local_question_must_start_with_kb",
+    "question": "LangChain 的核心模块有哪些？",
+    "expected_category": "local_knowledge",
+    "expected_first_tool": "search_knowledge_base",
+    "forbidden_first_tools": [
+      "search_web",
+      "execute_python_code"
+    ],
+    "tags": [
+      "agent",
+      "local_first",
+      "routing"
+    ]
+  },
+  {
+    "id": "realtime_question_allows_web",
+    "question": "2026 年 Python 最新版本是什么？",
+    "expected_category": "external_realtime",
+    "expected_first_tool": "search_web",
+    "required_allowed_tools": [
+      "search_web"
+    ],
+    "tags": [
+      "agent",
+      "web",
+      "routing"
+    ]
+  },
+  {
+    "id": "mixed_local_web_requires_layered_answer",
+    "question": "结合本项目资料和最新版本信息，说明 LangChain Agent 的变化。",
+    "expected_category": "external_realtime",
+    "expected_answer_sections": [
+      "本地资料",
+      "外部搜索补充",
+      "来源提示"
+    ],
+    "tags": [
+      "agent",
+      "local_plus_web",
+      "layered_answer"
+    ]
+  },
+  {
+    "id": "web_failure_keeps_search_trace",
+    "question": "今天 RAG 领域有什么最新进展？",
+    "expected_category": "external_realtime",
+    "expected_debug_fields": [
+      "search_trace.provider",
+      "search_trace.attempts",
+      "search_trace.fallback_used"
+    ],
+    "tags": [
+      "agent",
+      "web_fallback",
+      "debug"
+    ]
+  },
+  {
+    "id": "code_task_no_new_dependency",
+    "question": "用 Python 生成 RAG 评估报告。",
+    "forbidden_answer_keywords": [
+      "pip install",
+      "nltk",
+      "sklearn",
+      "transformers"
+    ],
+    "expected_answer_keywords": [
+      "json"
+    ],
+    "tags": [
+      "agent",
+      "code_tool",
+      "stdlib"
+    ]
+  }
+]
