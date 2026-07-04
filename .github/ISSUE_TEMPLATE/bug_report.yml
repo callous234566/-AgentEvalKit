@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a reproducible problem in AgentEvalKit.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please do not include API keys, `.env`, private documents, Chroma data, or logs with sensitive content.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, browser, and whether you used conda/venv.
+      placeholder: "Windows 11, Python 3.11, Chrome, conda"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reproducible steps.
+      placeholder: "1. Start backend...\n2. Upload demo doc...\n3. Ask..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: request_id
+    attributes:
+      label: Request ID
+      description: If available, paste the frontend diagnostic ID or `X-Request-ID`.
+      placeholder: "req-..."
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or logs
+      description: Optional. Redact secrets, private paths, and document content.

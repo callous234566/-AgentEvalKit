@@ -1,3 +1,11 @@
+## 2026-07-04 GitHub 标准开源化文档与模板补齐
+
+- 目标：把公开仓库从“可展示项目”整理成更标准的面试展示型开源项目，补齐许可证、协作规范、安全说明和 GitHub 协作入口。
+- 新增：`LICENSE`、`CONTRIBUTING.md`、`SECURITY.md`、`CODE_OF_CONDUCT.md`、`.github/ISSUE_TEMPLATE/bug_report.yml`、`.github/ISSUE_TEMPLATE/feature_request.yml`、`.github/pull_request_template.md`、`.github/dependabot.yml` 和 `docs/OPEN_SOURCE_CHECKLIST.md`。
+- README：增加 CI/Python/License/框架 badges、目录、Why this project、included/not included、Roadmap，并链接开源发布检查清单。
+- 面试文档：`docs/INTERVIEW_GUIDE.md` 增加公开仓库发布前 checklist 提醒。
+- 范围：仅文档、GitHub 模板和仓库治理文件；未修改后端 API、RAG/Agent 策略、前端 UI 行为或运行时依赖。
+
 ## 2026-07-04 README 中英双语重写
 
 - 目标：修复 GitHub README 中历史编码造成的中文乱码/问号问题，并将首页整理成中英双语公开展示版。

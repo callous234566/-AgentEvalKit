@@ -1,5 +1,13 @@
 # AgentEvalKit / Personal RAG Knowledge Base Assistant
 
+[![CI](https://github.com/callous234566/-AgentEvalKit/actions/workflows/ci.yml/badge.svg)](https://github.com/callous234566/-AgentEvalKit/actions/workflows/ci.yml)
+![Python 3.11](https://img.shields.io/badge/Python-3.11-blue)
+![License MIT](https://img.shields.io/badge/License-MIT-green)
+![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688)
+![Streamlit](https://img.shields.io/badge/Streamlit-frontend-ff4b4b)
+![LangChain](https://img.shields.io/badge/LangChain-RAG-1c3c3c)
+![Chroma](https://img.shields.io/badge/Chroma-vector%20store-6f42c1)
+
 [中文](#中文说明) | [English](#english)
 
 AgentEvalKit is an interview-ready personal RAG knowledge base assistant built with **FastAPI + Streamlit + LangChain + Chroma + SiliconFlow + Tavily**. It is designed to demonstrate a complete, maintainable AI application: document ingestion, hybrid retrieval, grounded answers with citations, Agent tool routing, Web fallback, request-id diagnostics, and evaluation baselines.
@@ -7,6 +15,46 @@ AgentEvalKit is an interview-ready personal RAG knowledge base assistant built w
 AgentEvalKit 是一个面向面试展示和长期维护的个人 RAG 知识库助手，技术栈为 **FastAPI + Streamlit + LangChain + Chroma + SiliconFlow + Tavily**。项目重点不是简单 demo，而是把文档入库、混合检索、引用追踪、Agent 工具调用、Web 降级、request id 排障和评测基线做成完整闭环。
 
 ![Workbench](docs/images/workbench.png)
+
+## Table of Contents / 目录
+
+- [Why this project / 为什么做这个项目](#why-this-project--为什么做这个项目)
+- [What is included / not included](#what-is-included--not-included)
+- [Roadmap / 后续路线](#roadmap--后续路线)
+- [中文说明](#中文说明)
+- [English](#english)
+- [License](#license)
+
+## Why this project / 为什么做这个项目
+
+Many RAG demos stop at "upload a file and ask a question". This project focuses on the engineering pieces that make a personal knowledge assistant reliable enough to present, debug, and maintain: reproducible ingestion, explainable retrieval, grounded citations, Agent routing, Web fallback, request-id diagnostics, and eval baselines.
+
+很多 RAG demo 停留在“上传文件然后问答”。这个项目更关注一个个人知识库助手真正可展示、可排障、可维护所需的工程闭环：可复现入库、可解释检索、引用来源、Agent 路由、Web 降级、request id 日志链路和评测基线。
+
+## What is included / not included
+
+Included in this public repository:
+
+- Source code for the FastAPI backend, Streamlit frontend, RAG pipeline, Agent tools, eval scripts, tests, and release checks.
+- Sanitized demo documents under `zhishiku/demo_*.md`.
+- GitHub Actions CI, issue templates, PR template, security policy, contribution guide, and open-source release checklist.
+
+This repository intentionally does **not** include:
+
+- Real `.env` files, API keys, bearer tokens, or private settings.
+- Real `chroma_db/` vector data, local logs, sessions, caches, backups, or eval reports.
+- Private knowledge base documents or private source text.
+
+公开仓库包含源码、测试、文档、脱敏演示资料、CI 和 GitHub 协作模板；不包含真实密钥、本地 Chroma、日志、缓存、备份、真实 eval report 或私有知识库正文。
+
+## Roadmap / 后续路线
+
+- Docker / docker-compose for easier clean-room demos.
+- OCR path for scanned PDFs and image-heavy documents.
+- HTML/Markdown reports for RAG eval and Agent eval.
+- Knowledge-base health check page: document count, chunk count, disabled documents, orphan mappings, embedding dimensions.
+- More sanitized eval cases and demo datasets.
+- Optional deployment guide for a single-user private server.
 
 ## 中文说明
 
@@ -94,6 +142,7 @@ Agent 为什么应该优先检索本地知识库？
 - `docs/DEMO_PACKAGE.md`
 - `docs/INTERVIEW_GUIDE.md`
 - `docs/AGENT_GUIDE.md`
+- `docs/OPEN_SOURCE_CHECKLIST.md`
 
 ### 架构概览
 
@@ -127,7 +176,11 @@ personal-rag-assistant/
 ├── scripts/check_backend_release.py
 ├── docs/                           # Guides, screenshots, known issues
 ├── zhishiku/demo_*.md              # Public sanitized demo docs
-├── .github/workflows/ci.yml
+├── .github/                        # CI, issue templates, PR template
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── CODE_OF_CONDUCT.md
+├── LICENSE
 ├── .env.example
 └── README.md
 ```
@@ -229,6 +282,8 @@ python scripts\check_backend_release.py --no-health
 - `collection_name_mapping.json` 与 Chroma collection 是否一致。
 - `/health` 是否返回 request id。
 
+完整发布清单见 `docs/OPEN_SOURCE_CHECKLIST.md`。
+
 ### GitHub Actions CI
 
 仓库包含 `.github/workflows/ci.yml`。CI 会：
@@ -240,6 +295,13 @@ python scripts\check_backend_release.py --no-health
 - 执行 `scripts/check_backend_release.py --no-health`。
 
 CI 不依赖真实 LLM key、Tavily key、Chroma 数据或正在运行的后端。
+
+仓库还包含：
+
+- `.github/ISSUE_TEMPLATE/bug_report.yml`
+- `.github/ISSUE_TEMPLATE/feature_request.yml`
+- `.github/pull_request_template.md`
+- `.github/dependabot.yml`
 
 ### 测试命令
 
@@ -373,8 +435,10 @@ python scripts\check_backend_release.py --no-health
 - `docs/INTERVIEW_GUIDE.md`: interview script.
 - `docs/AGENT_GUIDE.md`: Agent capabilities, boundaries, debug fields, and eval.
 - `docs/DEMO_PACKAGE.md`: sanitized demo package.
+- `docs/OPEN_SOURCE_CHECKLIST.md`: release checklist for public GitHub publishing.
 - `docs/KNOWN_ISSUES.md`: recurring pitfalls.
 - `PROJECT_MAP.md`: repository map for maintainers.
+- `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, and `LICENSE`: standard open-source project files.
 
 ### License
 

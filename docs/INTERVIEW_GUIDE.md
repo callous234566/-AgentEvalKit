@@ -1,6 +1,6 @@
 # 面试讲解指南
 
-本文档用于面试前快速复盘项目。建议展示顺序：README -> 本地 UI -> 架构图 -> RAG eval -> 关键代码 -> 测试与日志。
+本文档用于面试前快速复盘项目。建议展示顺序：README -> 本地 UI -> 架构图 -> RAG eval -> 关键代码 -> 测试与日志。发布到 GitHub 前，先按 `docs/OPEN_SOURCE_CHECKLIST.md` 做一次公开仓库安全检查。
 
 ## 3 分钟版本
 
@@ -75,6 +75,7 @@ flowchart TD
 - 提问 `这些资料是否说明了火星基地厨房的虚构配置项？`，展示标准短拒答。
 - 展示 `eval/rag_eval.py` 和 `eval/eval_cases.json`，说明 14/14 eval 基线。
 - 展示 `tests/test_agent_debug.py`、`tests/test_frontend_ui_contracts.py` 或 `tests/test_main_endpoints.py`，说明工程护栏。
+- 展示 `docs/OPEN_SOURCE_CHECKLIST.md`，说明公开仓库不会提交 `.env`、Chroma、日志、缓存、真实 eval report 或私有文档。
 
 ## 前端演示路线
 

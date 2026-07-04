@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest an improvement or new capability.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What workflow would this improve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the expected behavior.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Frontend / Streamlit UI
+        - Backend API
+        - RAG retrieval
+        - Agent / tools
+        - Eval / testing
+        - Documentation
+        - Deployment / CI
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional.
