@@ -18,6 +18,7 @@ from ui.api_wrappers import init as init_api_wrappers
 from ui.assets import CSS_STYLES
 from ui.chat import init_chat, render_chat_section
 from ui.components import render_app_hero, render_workspace_overview
+from ui.marketing import render_marketing_copilot
 from ui.pages import render_document_management, render_settings_panel
 from ui.sidebar import init_sidebar, render_sidebar
 from ui.upload import render_upload_section
@@ -74,8 +75,9 @@ def main():
     # 主内容区
     render_workspace_overview(current_collection)
 
-    tab1, tab2, tab3, tab4 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "文档上传",
+        "营销工作台",
         "知识库问答",
         "文档管理",
         "系统设置",
@@ -85,12 +87,15 @@ def main():
         render_upload_section(current_collection)
 
     with tab2:
-        render_chat_section(current_collection)
+        render_marketing_copilot(current_collection)
 
     with tab3:
-        render_document_management(current_collection)
+        render_chat_section(current_collection)
 
     with tab4:
+        render_document_management(current_collection)
+
+    with tab5:
         render_settings_panel()
 
 

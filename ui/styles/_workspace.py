@@ -493,6 +493,153 @@ WORKSPACE_CSS = """
         line-height: 1.5;
     }
 
+    .marketing-copilot-hero {
+        position: relative;
+        overflow: hidden;
+        margin: 0.25rem 0 1rem;
+        padding: 1.25rem 1.35rem;
+        border: 1px solid var(--rag-border);
+        border-radius: 24px;
+        background:
+            radial-gradient(circle at 92% 8%, var(--rag-blue-glow), transparent 26%),
+            linear-gradient(135deg, var(--rag-bg-card), var(--rag-bg-elevated));
+        box-shadow: var(--rag-shadow-card);
+    }
+    .marketing-copilot-kicker,
+    .marketing-copilot-tags span,
+    .marketing-flow-heading,
+    .marketing-section-title {
+        display: flex;
+        align-items: center;
+    }
+    .marketing-copilot-kicker {
+        gap: 0.4rem;
+        color: var(--rag-blue-primary);
+        font-size: 0.78rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0;
+    }
+    .marketing-copilot-kicker .ui-icon,
+    .marketing-copilot-tags .ui-icon {
+        width: 0.95rem;
+        height: 0.95rem;
+        color: currentColor;
+    }
+    .marketing-copilot-title {
+        margin-top: 0.4rem;
+        color: var(--rag-text-primary);
+        font-size: clamp(1.55rem, 3vw, 2.35rem);
+        font-weight: 950;
+        line-height: 1.12;
+    }
+    .marketing-copilot-copy {
+        max-width: 860px;
+        margin-top: 0.58rem;
+        color: var(--rag-text-secondary);
+        font-size: 0.94rem;
+        line-height: 1.65;
+    }
+    .marketing-copilot-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.48rem;
+        margin-top: 0.88rem;
+    }
+    .marketing-copilot-tags span {
+        gap: 0.35rem;
+        min-height: 30px;
+        padding: 0.18rem 0.62rem;
+        border: 1px solid var(--rag-border);
+        border-radius: 999px;
+        background: var(--rag-bg-elevated);
+        color: var(--rag-text-muted);
+        font-size: 0.78rem;
+        font-weight: 780;
+    }
+    .marketing-section-title {
+        justify-content: space-between;
+        gap: 0.7rem;
+        margin: 0.1rem 0 0.65rem;
+        color: var(--rag-text-primary);
+    }
+    .marketing-section-title strong {
+        font-size: 1rem;
+        font-weight: 930;
+    }
+    .marketing-section-title span {
+        color: var(--rag-text-placeholder);
+        font-size: 0.78rem;
+    }
+    .marketing-flow-card,
+    .marketing-checklist {
+        min-height: 178px;
+        margin-bottom: 0.7rem;
+        padding: 1rem;
+        border: 1px solid var(--rag-border);
+        border-radius: 18px;
+        background: var(--rag-bg-card);
+        box-shadow: var(--rag-shadow-sm);
+    }
+    .marketing-flow-heading {
+        gap: 0.7rem;
+    }
+    .marketing-flow-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.15rem;
+        height: 2.15rem;
+        border: 1px solid var(--rag-blue-100);
+        border-radius: 13px;
+        background: var(--rag-blue-50);
+        color: var(--rag-blue-primary);
+        flex: 0 0 auto;
+    }
+    .marketing-flow-icon .ui-icon {
+        width: 1.05rem;
+        height: 1.05rem;
+        color: currentColor;
+    }
+    .marketing-flow-title {
+        color: var(--rag-text-primary);
+        font-size: 0.98rem;
+        font-weight: 930;
+        line-height: 1.28;
+    }
+    .marketing-flow-subtitle,
+    .marketing-flow-output,
+    .marketing-checklist li,
+    .marketing-checklist-note {
+        color: var(--rag-text-secondary);
+        font-size: 0.8rem;
+        line-height: 1.55;
+    }
+    .marketing-flow-output {
+        margin-top: 0.75rem;
+        color: var(--rag-text-placeholder);
+    }
+    .marketing-checklist-title {
+        color: var(--rag-text-primary);
+        font-weight: 930;
+        margin-bottom: 0.5rem;
+    }
+    .marketing-checklist ol {
+        margin: 0.25rem 0 0.8rem 1.1rem;
+        padding: 0;
+    }
+    .marketing-checklist code {
+        color: var(--rag-blue-primary);
+        background: var(--rag-blue-50);
+        border-radius: 6px;
+        padding: 0.08rem 0.28rem;
+    }
+    .marketing-checklist-note {
+        padding-top: 0.7rem;
+        border-top: 1px solid var(--rag-border-subtle);
+        color: var(--rag-text-placeholder);
+    }
+
     .stButton > button {
         border-radius: 10px;
         font-weight: 600;

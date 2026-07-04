@@ -13,6 +13,25 @@ Agent 能力、边界和调试字段说明见 `docs/AGENT_GUIDE.md`。
 
 这两份文档覆盖本地 RAG、混合检索、BM25、引用来源、未知问题拒答、Agent 本地优先、Tavily fallback 和 evidence summary。
 
+## Marketing Copilot sample data
+
+For the AI Marketing Intelligence Copilot workflow, upload the fictional sample files in `samples/marketing/` into a new knowledge base:
+
+- `samples/marketing/offer_brief.md`
+- `samples/marketing/target_customer_notes.md`
+- `samples/marketing/landing_page_copy.md`
+- `samples/marketing/ad_performance.csv`
+- `samples/marketing/competitor_angle_notes.md`
+
+These files are synthetic and sanitized. They represent a fictional under-desk treadmill offer and can be used to test:
+
+- Campaign Angle Finder
+- Landing Page Critique
+- Creative Brief Generator
+- Test Plan Builder
+
+Do not replace these with real client data in a public demo. If you use private marketing documents locally, keep them out of Git, screenshots, logs, and eval reports.
+
 ## 推荐体验路线
 
 1. 创建知识库，例如 `示例知识库`。

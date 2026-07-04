@@ -2,6 +2,15 @@
 
 All notable changes for this project are recorded here.
 
+## Unreleased
+
+### Added
+
+- Added a contest-focused **AI Marketing Intelligence Copilot** workspace on top of the existing RAG assistant.
+- Added four media-buyer workflows: Campaign Angle Finder, Landing Page Critique, Creative Brief Generator, and Test Plan Builder.
+- Added sanitized fictional sample marketing files under `samples/marketing/`.
+- Documented the marketing copilot workflow and contest submission framing in the README and sample-data guide.
+
 ## v0.1.0 - 2026-07-04
 
 Initial public release of **Personal RAG Assistant**, a local-first personal RAG knowledge base assistant.

@@ -119,6 +119,46 @@ def test_format_last_response_diagnostic_suffix_empty_without_request_id(monkeyp
     assert api_wrappers.format_last_response_diagnostic_suffix() == ""
 
 
+def test_marketing_copilot_workspace_is_wired_into_streamlit_app():
+    app_source = _read("streamlit_app.py")
+    marketing_source = _read("ui/marketing.py")
+
+    assert "from ui.marketing import render_marketing_copilot" in app_source
+    assert "营销工作台" in app_source
+    assert "render_marketing_copilot(current_collection)" in app_source
+
+    assert "AI Marketing Intelligence Copilot" in marketing_source
+    assert "Campaign Angle Finder" in marketing_source
+    assert "Landing Page Critique" in marketing_source
+    assert "Creative Brief Generator" in marketing_source
+    assert "Test Plan Builder" in marketing_source
+    assert "st.session_state.queued_question = prompt" in marketing_source
+
+
+def test_marketing_sample_data_is_sanitized_and_documented():
+    sample_files = [
+        "samples/marketing/offer_brief.md",
+        "samples/marketing/target_customer_notes.md",
+        "samples/marketing/landing_page_copy.md",
+        "samples/marketing/ad_performance.csv",
+        "samples/marketing/competitor_angle_notes.md",
+    ]
+    for path in sample_files:
+        content = _read(path)
+        assert len(content.strip()) > 80
+        assert "TAVILY_API_KEY" not in content
+        assert "LLM_API_KEY" not in content
+        assert "Bearer " not in content
+
+    readme_source = _read("README.md")
+    sample_doc_source = _read("docs/SAMPLE_DATA.md")
+    assert "Contest Mode: AI Marketing Intelligence Copilot" in readme_source
+    assert "What does this tool do?" in readme_source
+    assert "Why build this tool?" in readme_source
+    assert "What would I build next?" in readme_source
+    assert "samples/marketing/" in sample_doc_source
+
+
 class FrontendUiContractsTest:
     def test_page_feedback_uses_unified_status_component(self):
         sources = _read_ui_sources()

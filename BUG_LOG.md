@@ -2329,3 +2329,10 @@
 - 根因补充：新版 Chroma 的 `list_collections()` 可能直接返回字符串集合名，旧的 `_collection_exists()` 只读取 `col.name`，会在确认“底层 collection 已不存在”时误判，从而把已删除状态继续当成失败。
 - 修复：`rag/vector_store.py` 兼容字符串和对象两种 collection 列表返回；同时把 `does not exist`、`not found`、`already deleted` 纳入可确认的删除后状态异常。
 - 测试：`tests/test_vector_store.py` 增加字符串集合名兼容测试和 missing collection 异常成功兜底测试。
+## 2026-07-04 AI Marketing Intelligence Copilot contest mode
+
+- Goal: add a contest-ready marketing workflow without changing the existing RAG/Agent backend, API shape, Chroma data, or stable Streamlit interactions.
+- Added `ui/marketing.py` with four media-buyer workflows: Campaign Angle Finder, Landing Page Critique, Creative Brief Generator, and Test Plan Builder. Each workflow sends a ready prompt through the existing `queued_question` chat path.
+- Added sanitized fictional marketing sample files under `samples/marketing/` so the project can demonstrate offer research, landing-page critique, creative briefing, and test planning without private client data.
+- Updated README, sample-data docs, project map, changelog, and frontend contract tests to document and protect the new contest mode.
+- Protection: no new dependency, no backend API change, no RAG strategy change, no real Chroma/log/eval/private data added.

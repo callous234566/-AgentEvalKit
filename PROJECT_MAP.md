@@ -61,6 +61,7 @@
 - `ui/sidebar.py`：知识库管理、会话历史、三点菜单、删除确认、重命名和分享入口。
 - `ui/upload.py`：上传选择、任务队列、删除、状态实时更新、失败提示、处理按钮。
 - `ui/chat.py`：聊天页、固定输入框、快捷提问、检索/生成流程、Agent 调试、导出、清空确认、最新回答滚动。
+- `ui/marketing.py`：AI Marketing Intelligence Copilot 工作台，提供 Campaign Angle Finder、Landing Page Critique、Creative Brief Generator 和 Test Plan Builder 四类营销工作流提示。
 - `ui/pages.py`：文档管理、搜索筛选排序、全选/删除/启用/禁用、系统设置。
 - `ui/api_wrappers.py`：前端 API 包装和缓存失效。
 - `ui/session_ui.py`：会话分享和导出面板。
@@ -87,6 +88,7 @@
 - `data/sessions.json`：Streamlit 多会话持久化。
 - `logs/`、`.runtime_logs/`、`.runlogs/`：运行日志。
 - `zhishiku/`：示例或本地知识资料。
+- `samples/marketing/`：公开参赛/演示用的虚构营销样例资料，包含 offer brief、customer notes、landing page copy、ad performance CSV 和 competitor notes。
 - `chroma_db_backup_*`、`chroma_db_dim384_*`、`chroma_export_*.json`：备份/导出数据。用途和是否仍需保留：待确认。
 - `vector_store.restore.tmp`：空临时文件。用途：待确认。
 
