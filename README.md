@@ -257,19 +257,19 @@ python eval\rag_eval.py --api-base http://127.0.0.1:8000 --api-token your-token
 python eval\rag_eval.py --api-base http://127.0.0.1:8000 --output-json eval\rag_eval_report.json
 ```
 
-Agent ????????????????Web fallback?debug ????????????
+Agent evaluation checks tool routing, first tool choice, Web fallback, debug fields, and code-tool safety boundaries:
 
 ```powershell
 python eval\agent_eval.py --api-base http://127.0.0.1:8000 --collection-name default
 ```
 
-??????????
+To save a structured Agent eval report:
 
 ```powershell
 python eval\agent_eval.py --api-base http://127.0.0.1:8000 --output-json eval\agent_eval_report.json
 ```
 
-`eval/rag_eval_report.json` ? `eval/agent_eval_report.json` ??????????????????
+`eval/rag_eval_report.json` and `eval/agent_eval_report.json` are local evaluation artifacts and should not be committed to the public repository.
 
 ### Backend release gate
 
