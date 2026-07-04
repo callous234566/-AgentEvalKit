@@ -1,3 +1,10 @@
+## 2026-07-04 GitHub 仓库名称与描述更新
+
+- 目标：去掉公开仓库名称前面的横杠，让 GitHub 页面更像标准开源项目。
+- 调整：GitHub 仓库从 `callous234566/-AgentEvalKit` 重命名为 `callous234566/AgentEvalKit`，并设置 Description 为面试展示型个人 RAG 知识库助手说明。
+- 同步：本地 `origin` remote 已更新为 `https://github.com/callous234566/AgentEvalKit.git`；README CI badge 链接同步到新仓库地址。
+- 范围：仅 GitHub 仓库元数据、README 链接和维护日志；未修改业务代码或运行时行为。
+
 ## 2026-07-04 GitHub 标准开源化文档与模板补齐
 
 - 目标：把公开仓库从“可展示项目”整理成更标准的面试展示型开源项目，补齐许可证、协作规范、安全说明和 GitHub 协作入口。

@@ -1,6 +1,6 @@
 # AgentEvalKit / Personal RAG Knowledge Base Assistant
 
-[![CI](https://github.com/callous234566/-AgentEvalKit/actions/workflows/ci.yml/badge.svg)](https://github.com/callous234566/-AgentEvalKit/actions/workflows/ci.yml)
+[![CI](https://github.com/callous234566/AgentEvalKit/actions/workflows/ci.yml/badge.svg)](https://github.com/callous234566/AgentEvalKit/actions/workflows/ci.yml)
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue)
 ![License MIT](https://img.shields.io/badge/License-MIT-green)
 ![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688)
