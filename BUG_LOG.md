@@ -1,3 +1,9 @@
+## 2026-07-04 README 中英双语重写
+
+- 目标：修复 GitHub README 中历史编码造成的中文乱码/问号问题，并将首页整理成中英双语公开展示版。
+- 调整：`README.md` 重写为中英双语结构，保留项目亮点、截图、快速启动、演示路线、API、RAG eval、Agent eval、release check、GitHub Actions CI、测试命令和发布安全策略。
+- 保护：未修改业务代码、后端 API、RAG/Agent 策略或依赖；只更新公开文档。
+
 ## 2026-07-04 GitHub Actions Lightweight CI
 
 - 目标：为公开 GitHub 仓库增加不依赖真实密钥、真实 Chroma、真实后端或真实 LLM/Tavily 的轻量 CI，提升面试发布版工程可信度。
