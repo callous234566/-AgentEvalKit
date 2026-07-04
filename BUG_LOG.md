@@ -1,3 +1,10 @@
+## 2026-07-04 README 公开产品口径收敛
+
+- 目标：移除公开 README 和贡献指南中的“面试展示 / interview-ready / demo”包装口径，让仓库更像长期维护的标准开源项目。
+- 调整：README 首屏简介改为本地优先、可维护的个人 RAG 知识库助手；Why/Included/Roadmap/Quick Usage Flow 等段落改用产品和开源项目表述。
+- 同步：`CONTRIBUTING.md` 和 `SECURITY.md` 顶部项目名与定位同步为 `Personal RAG Assistant`。
+- 范围：仅公开文档措辞调整；未修改业务代码、GitHub 仓库设置或运行时行为。
+
 ## 2026-07-04 GitHub 仓库重新命名为 PersonalRAGAssistant
 
 - 目标：让公开仓库名称更贴合项目本体，避免 `AgentEvalKit` 给人“只是 Agent 评测工具”的误解。

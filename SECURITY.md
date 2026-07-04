@@ -1,8 +1,8 @@
 # Security Policy / 安全政策
 
-AgentEvalKit is a local personal RAG assistant. Most security risks come from accidentally publishing local data, API keys, logs, or evaluation artifacts.
+Personal RAG Assistant is a local personal RAG assistant. Most security risks come from accidentally publishing local data, API keys, logs, or evaluation artifacts.
 
-AgentEvalKit 是一个本地个人 RAG 助手，主要安全风险来自误提交本地数据、API key、日志或评测产物。
+Personal RAG Assistant 是一个本地个人 RAG 助手，主要安全风险来自误提交本地数据、API key、日志或评测产物。
 
 ## Do Not Publish / 请勿公开提交
 

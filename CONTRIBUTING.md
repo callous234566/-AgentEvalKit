@@ -1,8 +1,8 @@
 # Contributing / 贡献指南
 
-Thanks for your interest in AgentEvalKit. This repository is primarily an interview-ready open-source demo, so contributions should keep the project easy to run, explain, and verify.
+Thanks for your interest in Personal RAG Assistant. This repository is a local-first personal RAG knowledge base assistant, so contributions should keep the project easy to run, explain, and verify.
 
-感谢你关注 AgentEvalKit。本仓库定位为面试展示型开源项目，贡献应优先保持项目易运行、易理解、易验证。
+感谢你关注 Personal RAG Assistant。本仓库定位为本地优先的个人 RAG 知识库助手，贡献应优先保持项目易运行、易理解、易验证。
 
 ## Local Setup / 本地启动
 
